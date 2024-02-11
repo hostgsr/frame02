@@ -90,10 +90,11 @@ export default async function Home({
       >
         {/* <FrameImage src="https://framesjs.org/og.png" /> */}
         <FrameImage>
-          <div tw="w-full h-full bg-slate-700 text-white justify-center items-center">
+          <div tw="w-full h-full bg-black p-5 text-white justify-center items-center">
             {frameMessage?.inputText ? frameMessage.inputText : "Welcome to this cast! I will use this platform to offer my web3 services."}
           </div>
         </FrameImage>
+       
         <FrameInput text="put some text here" />
         <FrameButton>
           {state?.active === "1" ? "Active" : "Inactive"}
@@ -101,7 +102,7 @@ export default async function Home({
         <FrameButton>
           {state?.active === "2" ? "Active" : "Inactive"}
         </FrameButton>
-        <FrameButton
+        {/* <FrameButton
           action="mint"
           target={getTokenUrl({
             address: "0x060f3edd18c47f59bd23d063bbeb9aa4a8fec6df",
@@ -110,7 +111,7 @@ export default async function Home({
           })}
         >
           Mint
-        </FrameButton>
+        </FrameButton> */}
         <FrameButton action="link" target={`https://www.google.com`}>
           External
         </FrameButton>
