@@ -89,17 +89,22 @@ export default async function Home({
       >
         {/* <FrameImage src="https://framesjs.org/og.png" /> */}
         <FrameImage>
-          <div tw="w-full h-full bg-black p-5 text-white justify-center items-center">
-            {frameMessage?.inputText ? frameMessage.inputText : "Welcome to this cast! I will use this platform to offer my web3 services."}
-          </div>
-        </FrameImage>
+  <div tw="w-full h-full bg-black p-5 text-white justify-center items-center">
+    {state.active === "2" && frameMessage?.inputText
+      ? frameMessage.inputText
+      : state.active === "2"
+      ? "Stay tuned"
+      : "Welcome to this cast! I will use this platform to offer my web3 services."}
+  </div>
+</FrameImage>
+
        
-        <FrameInput text="put some text here" />
+       
         <FrameButton>
-          {state?.active === "1" ? "Active" : "Inactive"}
+          {state?.active === "1" ? "Next" : "Over"}
         </FrameButton>
         <FrameButton>
-          {state?.active === "2" ? "Active" : "Inactive"}
+          {state?.active === "2" ? "Back" : "Inactive"}
         </FrameButton>
         {/* <FrameButton
           action="mint"
