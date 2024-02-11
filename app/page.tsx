@@ -78,8 +78,7 @@ export default async function Home({
   // then, when done, return next frame
   return (
     <div className="p-4">
-      0xGleb Frame01
-      {" "}
+      0xGleb {" "}
       <Link href={`/debug?url=${baseUrl}`} className="underline">
         Debug
       </Link>
@@ -92,7 +91,6 @@ export default async function Home({
         <FrameImage>
           <div tw="w-full h-full bg-black p-5 text-white justify-center items-center">
             {frameMessage?.inputText ? frameMessage.inputText : "Welcome to this cast! I will use this platform to offer my web3 services."}
-            <span>0xGleb</span>
           </div>
         </FrameImage>
        
