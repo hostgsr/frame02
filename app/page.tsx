@@ -100,11 +100,9 @@ export default async function Home({
 
        
        
+        
         <FrameButton>
-          {state?.active === "1" ? "Back" : "..."}
-        </FrameButton>
-        <FrameButton>
-          {state?.active === "2" ? "Over" : "Next"}
+          {state?.active === "2" ? "GM!" : "Next"}
         </FrameButton>
         {/* <FrameButton
           action="mint"
