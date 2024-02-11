@@ -93,16 +93,16 @@ export default async function Home({
     {state.active === "2" && frameMessage?.inputText
       ? frameMessage.inputText
       : state.active === "2"
-      ? "Stay tuned"
+      ? "stay tuned"
       : "Welcome to this cast! I will use this platform to offer my web3 services."}
   </div>
 </FrameImage>
 
        
        
-        <FrameButton>
-          {state?.active === "1" ? "Back" : "GM!"}
-        </FrameButton>
+        {/* <FrameButton>
+          {state?.active === "1" ? "GM!" : "GM!"}
+        </FrameButton> */}
         <FrameButton>
           {state?.active === "2" ? "GM" : "Next"}
         </FrameButton>
