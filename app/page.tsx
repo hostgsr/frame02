@@ -92,6 +92,7 @@ export default async function Home({
         <FrameImage>
           <div tw="w-full h-full bg-black p-5 text-white justify-center items-center">
             {frameMessage?.inputText ? frameMessage.inputText : "Welcome to this cast! I will use this platform to offer my web3 services."}
+            <span>0xGleb</span>
           </div>
         </FrameImage>
        
