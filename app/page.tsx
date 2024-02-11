@@ -101,10 +101,10 @@ export default async function Home({
        
        
         <FrameButton>
-          {state?.active === "1" ? "Next" : "Over"}
+          {state?.active === "1" ? "Back" : "..."}
         </FrameButton>
         <FrameButton>
-          {state?.active === "2" ? "Back" : "Inactive"}
+          {state?.active === "2" ? "Over" : "Next"}
         </FrameButton>
         {/* <FrameButton
           action="mint"
