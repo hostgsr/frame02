@@ -100,9 +100,9 @@ export default async function Home({
 
        
        
-        {/* <FrameButton>
+        <FrameButton>
           {state?.active === "1" ? "GM!" : "GM!"}
-        </FrameButton> */}
+        </FrameButton>
         <FrameButton>
           {state?.active === "2" ? "GM" : "Next"}
         </FrameButton>
