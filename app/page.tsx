@@ -100,9 +100,11 @@ export default async function Home({
 
        
        
-        
         <FrameButton>
-          {state?.active === "2" ? "GM!" : "Next"}
+          {state?.active === "1" ? "Back" : "GM!"}
+        </FrameButton>
+        <FrameButton>
+          {state?.active === "2" ? "GM" : "Next"}
         </FrameButton>
         {/* <FrameButton
           action="mint"
@@ -114,9 +116,9 @@ export default async function Home({
         >
           Mint
         </FrameButton> */}
-        <FrameButton action="link" target={`https://www.google.com`}>
+        {/* <FrameButton action="link" target={`https://www.google.com`}>
           External
-        </FrameButton>
+        </FrameButton> */}
       </FrameContainer>
     </div>
   );
